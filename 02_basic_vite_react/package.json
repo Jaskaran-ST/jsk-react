@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "02_basic_vite_react": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
