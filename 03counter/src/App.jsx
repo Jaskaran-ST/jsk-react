@@ -8,14 +8,20 @@ function App() {
 
   // let counter = 5
 
-  // const addValue = () =>{
-  //   setCounter(counter+1)
+  // const addValue = () => {
+  //   setCounter(counter + 1)
   //   console.log("value added")
   // }
 
   function addValue() {
     if (counter < 20) {
-      setCounter(counter + 1)
+      // setCounter(counter + 1)
+      // setCounter(counter + 1)
+      // setCounter(counter + 1)
+      // setCounter(counter + 1)  // it does work beause react works in batch and sends the setcounter value as starting one bcz it assumes all the setCOunter are same.
+
+      setCounter(prevCounter => prevCounter + 1)
+      setCounter((prevCounter) => prevCounter + 1)
       console.log("value added")
     }
   }
